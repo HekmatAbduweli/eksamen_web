@@ -256,8 +256,8 @@ header form input {
       "kontakt  snarvei   sms";
   }
 
-  
-  .footer section ul li {
-    
+  .footer-kontakt-seksjon strong{
+    margin: 0 10px;
   }
+  
 }
