@@ -41,11 +41,16 @@ header nav a {
   text-decoration: none;
 }
 
+header i,
+footer i {
+  font-size: 20px;
+}
+
 /*her har jeg sprte chat gpt*/
 header form {
   border: 1px solid black;
   max-width: 250px;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -103,7 +108,7 @@ header form input {
 .product-card p {
   margin: 10px 0;
 }
-.product-card a{
+.product-card a {
   text-decoration: none;
   color: #000;
 }
@@ -163,7 +168,7 @@ header form input {
   margin: 5px 0;
 }
 
-.checkout-knapp{
+.checkout-knapp {
   display: block;
   background-color: #434343;
   color: white;
@@ -174,22 +179,23 @@ header form input {
   margin: 10px 0;
 }
 
-.check-knapp-seksjon label{
+.check-knapp-seksjon label {
   display: block;
   margin: 10px 0;
   font-weight: 800;
 }
 
-.check-knapp-seksjon label input{
-  margin:0;
+.check-knapp-seksjon label input {
+  margin: 0;
 }
 
-.betalings-info footer{
+.betalings-info footer {
   margin: 20px 0;
 }
 
-.betalings-info footer p, .betalings-info footer button{
-  margin:0
+.betalings-info footer p,
+.betalings-info footer button {
+  margin: 0;
 }
 
 /*footer*/
@@ -208,3 +214,50 @@ header form input {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 600px) {
+  header,
+  main,
+  footer {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* her brukte jeg w3 school sin kode */
+.footer-logo-seksjon {
+    grid-area: logo;
+  }
+  .footer-kontakt-seksjon {
+    grid-area: kontakt;
+  }
+  .footer-snarvei-seksjon {
+    grid-area: snarvei;
+  }
+  .footer-sms-seksjon {
+    grid-area: sms;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-areas:
+      "logo logo logo "
+      "kontakt  snarvei   sms"
+      "kontakt  snarvei   sms";
+  }
+
+  
+  .footer section ul li {
+    
+  }
+}
