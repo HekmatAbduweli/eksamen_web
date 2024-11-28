@@ -9,12 +9,14 @@ body {
 }
 
 /* her brukte jeg chatgpt */
-header, main, footer{
+header,
+main,
+footer {
   max-width: 430px;
   width: 100%;
 }
 
-section{
+section {
   margin: 3rem 0;
 }
 
@@ -58,20 +60,20 @@ header form input {
 
 /*main*/
 /* index.html */
-.reklame-seksjon{
-    background-color: #cccccc;
-    padding: 35px;
-    text-align: right;
+.reklame-seksjon {
+  background-color: #cccccc;
+  padding: 35px;
+  text-align: right;
 }
 
-.reklame-seksjon button{
-    color: white;
-    background-color: #000;
-    border: none;
-    padding: 10px 15px;
+.reklame-seksjon button {
+  color: white;
+  background-color: #000;
+  border: none;
+  padding: 10px 15px;
 }
 
-.filter-button-section ul{
+.filter-button-section ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -81,34 +83,35 @@ header form input {
   flex-wrap: wrap;
 }
 
-.filter-button-section ul li button{
-    background-color: white;
-    border: 1px solid gray;
-    padding: 20px 25px;
-    text-align: left;
+.filter-button-section ul li button {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 20px 25px;
+  text-align: left;
 }
 
-.product-card{
+.product-card {
   margin: 1.5rem 0;
 }
 
-.product-card img{
+.product-card img {
   max-width: 430px;
   width: 100%;
 }
 
-.product-card h3, .product-card p{
+.product-card h3,
+.product-card p {
   margin: 10px 0;
 }
 
-.kategori-seksjon article{
- border: 1px solid black;
+.kategori-seksjon article {
+  border: 1px solid black;
   padding: 7rem;
   text-align: center;
   margin: 1rem 0;
 }
 
-.feedback-seksjon article{
+.feedback-seksjon article {
   border: 1px solid gray;
   padding: 1rem;
   margin: 1rem 0;
@@ -116,7 +119,7 @@ header form input {
 
 /* produkt side */
 
-.breadcrumb ul{
+.breadcrumb ul {
   padding: 0;
   list-style: none;
   display: flex;
@@ -131,22 +134,23 @@ header form input {
   content: ">";
 }
 
-.produkt-bilde-seksjon figure{
+.produkt-bilde-seksjon figure {
   margin: auto 0;
 }
 
-.product-card .produkt-side-card{
+.product-card .produkt-side-card {
   display: flex;
   justify-content: space-between;
 }
 
 /* checkout seksjon */
 
-.kasse-side h3, .kasse-side p{
+.kasse-side h3,
+.kasse-side p {
   margin: 0;
 }
 
-.leveringsadresse form input{
+.skjemapåfyll form input {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -155,16 +159,34 @@ header form input {
   margin: 5px 0;
 }
 
-.leveringsadresse footer button{
+.checkout-knapp{
   display: block;
   background-color: #434343;
   color: white;
   padding: 10px 15px;
   /* brukte w3 school sin kode her */
   border-style: solid;
-  border-color: whitesmoke gray gray whitesmoke;
+  border-color: #e3e3e3 #979797 #979797 #e3e3e3;
+  margin: 10px 0;
 }
 
+.check-knapp-seksjon label{
+  display: block;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.check-knapp-seksjon label input{
+  margin:0;
+}
+
+.betalings-info footer{
+  margin: 20px 0;
+}
+
+.betalings-info footer p, .betalings-info footer button{
+  margin:0
+}
 
 /*footer*/
 
@@ -172,12 +194,12 @@ header form input {
   border-top: 1px solid gray;
 }
 
-footer ul {
+.footer ul {
   list-style: none;
   padding: 0;
 }
 
-footer a {
+.footer a {
   color: black;
   text-decoration: none;
 }

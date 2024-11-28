@@ -61,7 +61,7 @@
                 <p>Farge: <b>Beige</b></p>
             </article>
         </section>
-        <section class="leveringsadresse">
+        <section class="leveringsadresse skjemapåfyll">
             <h2>
                 2. Dine opplyssninger
             </h2>
@@ -74,43 +74,60 @@
                 <input type="text" placeholder="Postnummer*">
             </form>
             <footer>
-                <button type="button">Lagre</button>
+                <button type="button" class="checkout-knapp">Lagre</button>
                 <a href="">Avbryt</a>
             </footer>
         </section>
-        <section class="leveringsvalg">
+        <section class="check-knapp-seksjon">
             <h2>3. Levering</h2>
             <form action="submit">
                 <h3>Leveringsvalg</h3>
-                <input type="checkbox">
-                <p>posten</p>
-                <input type="checkbox">
-                <p>postnor</p>
-                <input type="checkbox">
-                <p>helthjem</p>
+
+                <label>
+                    <input type="radio">
+                    posten</label>
+
+                <label>
+                    <input type="radio">
+                    postnor</label>
+
+                <label>
+                    <input type="radio">
+                    helthjem</label>
             </form>
         </section>
-        <section>
+        <section class="betalings-info skjemapåfyll">
             <h2>4.betaling</h2>
             <form action="submit">
-                <p>Betal med kort</p>
-                <p>kortnummer</p>
+                <h3>Betal med kort</h3>
+                <label>kortnummer</label>
                 <input type="text">
-                <p>utløpsdato</p>
+                <label>utløpsdato</label>
                 <input type="date">
-                <p>cvc nummer</p>
+                <label>cvc nummer</label>
                 <input type="number">
+            </form>
+            <footer>
                 <p>betale med</p>
                 <p>1999,-</p>
-                <input type="button" value="betal">
-            </form>
+                <button type="button" class="checkout-knapp">Fullfør kjøp</button>
+            </footer>
+        </section>
+        <section class="check-knapp-seksjon">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste mollitia explicabo ullam, quod
                 temporibus. Suscipit, doloribus. A, qui. Quos quisquam ipsum aperiam fugiat quae ab delectus aut
                 recusandae sed!</p>
-            <input type="checkbox">
-            <p>ja takk!</p>
-            <input type="checkbox">
-            <p>ja takk!</p>
+
+            <label>
+                <input type="checkbox">
+                ja takk!
+            </label>
+
+            <label>
+                <input type="checkbox">
+                ja takk!
+            </label>
+
         </section>
 
     </main>
