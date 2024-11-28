@@ -4,35 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <script src="https://kit.fontawesome.com/a45519f1c1.js" crossorigin="anonymous"></script>
     <title>Hjemside</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <form action="search">
                 <input type="text" placeholder="Søk her">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <ul>
-                <li><a href="">Hjem</a></li>
-                <li><a href="">Produkter</a></li>
-                <li id="logo"><a href=""><span>Logo</span></a></li>
-                <li><a href="">Kategorier</a></li>
-                <li><a href="">Kontakt oss</a></li>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#product">Produkter</a></li>
+                <li id="logo"><a href="inde.html"><span>Logo</span></a></li>
+                <li><a href="index.html#category">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
             <ul>
-                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                <li><a href=""><i class="fa-regular fa-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="reklame-seksjon">
+        <section class="banner">
             <h2>Lorem ipsum dolor sit amet.</h2>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error dolorem animi minima
@@ -40,7 +40,7 @@
                 <button>FÅ EN PAKKE I DAG</button>
             </article>
         </section>
-        <section>
+        <section id="product">
             <h2>Våre Populære Produkter</h2>
             <article class="filter-button-section">
                 <p>oppdag av det beste</p>
@@ -51,32 +51,42 @@
                 </ul>
             </article>
             <article class="product-card">
-                <img src="https://picsum.photos/430" alt="">
-                <h3>Produnktnavn</h3>
-                <p>Pris: 199,-</p>
-            </article>
-            <article  class="product-card">
-                <img src="https://picsum.photos/430" alt="">
-                <h3>Produnktnavn</h3>
-                <p>Pris: 199,-</p>
-            </article>
-            <article  class="product-card">
-                <img src="https://picsum.photos/430" alt="">
-                <h3>Produnktnavn</h3>
-                <p>Pris: 199,-</p>
-            </article>
-            <article  class="product-card">
-                <img src="https://picsum.photos/430" alt="">
-                <h3>Produnktnavn</h3>
-                <p>Pris: 199,-</p>
+                <a href="product.html">
+                    <img src="https://picsum.photos/430" alt="produktbildet">
+                    <h3>Produnktnavn</h3>
+                    <p>Pris: 199,-</p>
+                </a>
             </article>
             <article class="product-card">
-                <img src="https://picsum.photos/430" alt="">
-                <h3>Produnktnavn</h3>
-                <p>Pris: 199,-</p>
+                <a href="product.html">
+                    <img src="https://picsum.photos/430" alt="produktbildet">
+                    <h3>Produnktnavn</h3>
+                    <p>Pris: 199,-</p>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product.html">
+                    <img src="https://picsum.photos/430" alt="produktbildet">
+                    <h3>Produnktnavn</h3>
+                    <p>Pris: 199,-</p>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product.html">
+                    <img src="https://picsum.photos/430" alt="produktbildet">
+                    <h3>Produnktnavn</h3>
+                    <p>Pris: 199,-</p>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product.html">
+                    <img src="https://picsum.photos/430" alt="produktbildet">
+                    <h3>Produnktnavn</h3>
+                    <p>Pris: 199,-</p>
+                </a>
             </article>
         </section>
-        <section class="kategori-seksjon">
+        <section class="kategori-seksjon" id="category">
             <h2>Våre populære kategorier</h2>
             <article>
                 <h3>Categori</h3>
@@ -97,14 +107,14 @@
         <section class="feedback-seksjon">
             <h2>Ammeldelser</h2>
             <article>
-                <img src="https://picsum.photos/150" alt="">
+                <img src="https://picsum.photos/150" alt="bruker sin bildet">
                 <h3>Allan Walker</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, iste? Libero nihil modi et
                     consectetur commodi facere quidem numquam ipsa quia minus, quis veritatis error voluptatibus tenetur
                     incidunt fuga natus!</p>
             </article>
             <article>
-                <img src="https://picsum.photos/150" alt="">
+                <img src="https://picsum.photos/150" alt="bruker sin bildet">
                 <h3>Allan Walker</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, iste? Libero nihil modi et
                     consectetur
@@ -113,7 +123,7 @@
                 </p>
             </article>
             <article>
-                <img src="https://picsum.photos/150" alt="">
+                <img src="https://picsum.photos/150" alt="bruker sin bildet">
                 <h3>Allan Walker</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, iste? Libero nihil modi et
                     consectetur
@@ -122,7 +132,7 @@
                 </p>
             </article>
             <article>
-                <img src="https://picsum.photos/150" alt="">
+                <img src="https://picsum.photos/150" alt="bruker sin bildet">
                 <h3>Allan Walker</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, iste? Libero nihil modi et
                     consectetur
@@ -132,16 +142,18 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <section>
-            <h2>LOGO</h2>
+            <a href="index.html#header">
+                <h1>Logo</h1>
+            </a>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minus hic possimus! Iure, ipsum et,
                     vero eaque architecto maxime minus nostrum deleniti alias repudiandae rerum quo, recusandae
                     doloremque repellat minima.</p>
             </article>
         </section>
-        <section>
+        <section id="kontakt">
             <h2>KONTAKT</h2>
             <article>
                 <ul>
@@ -156,9 +168,9 @@
             <h2>SNARVEIER</h2>
             <article>
                 <ul>
-                    <li><a href="">Produkter</a></li>
-                    <li><a href="">Kategorier</a></li>
-                    <li><a href="">Kontakt oss</a></li>
+                    <li><a href="index.html#product">Produkter</a></li>
+                    <li><a href="index.html#category">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
             </article>
         </section>

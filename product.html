@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <script src="https://kit.fontawesome.com/a45519f1c1.js" crossorigin="anonymous"></script>
     <title>Produkt</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <form action="search">
                 <input type="text" placeholder="Søk her">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <ul>
-                <li><a href="">Hjem</a></li>
-                <li><a href="">Produkter</a></li>
-                <li id="logo"><a href=""><span>Logo</span></a></li>
-                <li><a href="">Kategorier</a></li>
-                <li><a href="">Kontakt oss</a></li>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#product">Produkter</a></li>
+                <li id="logo"><a href="index.html"><span>Logo</span></a></li>
+                <li><a href="index.html#category">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
             <ul>
-                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                <li><a href=""><i class="fa-regular fa-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -42,10 +43,10 @@
         <section class="produkt-bilde-seksjon">
             <!-- her brukte jeg chatgpt -->
             <figure>
-                <img src="https://picsum.photos/430" alt="">
-                <img src="https://picsum.photos/430" alt="">
-                <img src="https://picsum.photos/430" alt="">
-                <img src="https://picsum.photos/430" alt="">
+                <img src="https://picsum.photos/430" alt="eksempelbilde">
+                <img src="https://picsum.photos/430" alt="eksempelbilde">
+                <img src="https://picsum.photos/430" alt="eksempelbilde">
+                <img src="https://picsum.photos/430" alt="eksempelbilde">
             </figure>
             <aside>
                 <article>
@@ -59,56 +60,67 @@
         <section>
             <h2>Lignede produkter</h2>
             <article class="product-card">
-                <img src="https://picsum.photos/200" alt="">
-                <!-- fant ut å bruke span var feil etter jej kjørte koden i w3 validator -->
-                <article class="produkt-side-card">
-                    <h3>Produktnavn</h3>
-                    <p>Pris: 199,-</p>
-                </article>
+                <a href="product.html">
+                    <img src="https://picsum.photos/200" alt="produktbildet">
+                    <!-- fant ut å bruke span var feil etter jej kjørte koden i w3 validator -->
+                    <!-- spurte chatgpt og ambefaltefalte meg å bruke article -->
+                    <article class="produkt-side-card">
+                        <h3>Produktnavn</h3>
+                        <p>Pris: 199,-</p>
+                    </article>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product.html">
+                    <img src="https://picsum.photos/200" alt="produktbildet">
+                    <article class="produkt-side-card">
+                        <h3>Produktnavn</h3>
+                        <p>Pris: 199,-</p>
+                    </article>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product.html">
+                    <img src="https://picsum.photos/200" alt="produktbildet">
+                    <article class="produkt-side-card">
+                        <h3>Produktnavn</h3>
+                        <p>Pris: 199,-</p>
+                    </article>
+                </a>
 
             </article>
             <article class="product-card">
-                <img src="https://picsum.photos/200" alt="">
-                <article class="produkt-side-card">
-                    <h3>Produktnavn</h3>
-                    <p>Pris: 199,-</p>
-                </article>
+                <a href="product.html"><img src="https://picsum.photos/200" alt="produktbildet">
+                    <article class="produkt-side-card">
+                        <h3>Produktnavn</h3>
+                        <p>Pris: 199,-</p>
+                    </article>
+                </a>
             </article>
             <article class="product-card">
-                <img src="https://picsum.photos/200" alt="">
-                <article class="produkt-side-card">
-                    <h3>Produktnavn</h3>
-                    <p>Pris: 199,-</p>
-                </article>
-            </article>
-            <article class="product-card">
-                <img src="https://picsum.photos/200" alt="">
-                <article class="produkt-side-card">
-                    <h3>Produktnavn</h3>
-                    <p>Pris: 199,-</p>
-                </article>
-            </article>
-            <article class="product-card">
-                <img src="https://picsum.photos/200" alt="">
-                <article class="produkt-side-card">
-                    <h3>Produktnavn</h3>
-                    <p>Pris: 199,-</p>
-                </article>
+                <a href="product.html"><img src="https://picsum.photos/200" alt="">
+                    <article class="produkt-side-card">
+                        <h3>Produktnavn</h3>
+                        <p>Pris: 199,-</p>
+                    </article>
+                </a>
             </article>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <section>
-            <h2>LOGO</h2>
+            <a href="index.html#header">
+                <h1>Logo</h1>
+            </a>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minus hic possimus! Iure, ipsum et,
                     vero eaque architecto maxime minus nostrum deleniti alias repudiandae rerum quo, recusandae
                     doloremque repellat minima.</p>
             </article>
         </section>
-        <section>
+        <section id="kontakt">
             <h2>KONTAKT</h2>
             <article>
                 <ul>
@@ -123,9 +135,9 @@
             <h2>SNARVEIER</h2>
             <article>
                 <ul>
-                    <li><a href="">Produkter</a></li>
-                    <li><a href="">Kategorier</a></li>
-                    <li><a href="">Kontakt oss</a></li>
+                    <li><a href="index.html#product">Produkter</a></li>
+                    <li><a href="index.html#category">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
             </article>
         </section>
