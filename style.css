@@ -1,3 +1,4 @@
+/* felles */
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6rem;
@@ -11,6 +12,10 @@ body {
 header, main, footer{
   max-width: 430px;
   width: 100%;
+}
+
+section{
+  margin: 3rem 0;
 }
 
 /*header*/
@@ -69,7 +74,9 @@ form input {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 1rem;
+  /* her brukte jeg flexwrap fra mozilla til å teste om jeg bruke den til filter knapp seksjon i hjemside  */
+  /* gap: 1rem; */
+  flex-wrap: wrap;
 }
 
 .filter-button-section ul li button{
@@ -83,8 +90,42 @@ form input {
   margin: 1.5rem 0;
 }
 
+.product-card img{
+  max-width: 430px;
+  width: 100%;
+}
+
 .product-card h3, .product-card p{
   margin: 10px 0;
+}
+
+.kategori-seksjon article{
+ border: 1px solid black;
+  padding: 7rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.feedback-seksjon article{
+  border: 1px solid gray;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* produkt side */
+.breadcrumb ul{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  /* her brukte jeg mozilla breadcrumb sin kode */
+  flex-wrap: wrap;
+  align-items: end;
+}
+/* her brukte jeg mozilla breadcrumb sin kode */
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: ">";
 }
 
 /*footer*/
