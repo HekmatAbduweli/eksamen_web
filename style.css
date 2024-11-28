@@ -113,6 +113,7 @@ form input {
 }
 
 /* produkt side */
+
 .breadcrumb ul{
   padding: 0;
   list-style: none;
@@ -127,6 +128,18 @@ form input {
   margin: 0 0.25rem;
   content: ">";
 }
+
+.produkt-bilde-seksjon figure{
+  margin: auto 0;
+}
+
+.product-card span{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* checkout seksjon */
+
 
 /*footer*/
 
