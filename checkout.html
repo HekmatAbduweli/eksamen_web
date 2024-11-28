@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="">Hjem</a></li>
                 <li><a href="">Produkter</a></li>
-                <li><a href=""><span>Logo</span></a></li>
+                <li id="logo"><a href=""><span>Logo</span></a></li>
                 <li><a href="">Kategorier</a></li>
                 <li><a href="">Kontakt oss</a></li>
             </ul>
@@ -30,65 +30,69 @@
             </ul>
         </nav>
     </header>
-    <main><h1>
-                Kasse
-            </h1>
+    <main>
+        <h1>
+            Kasse
+        </h1>
         <section>
             <h2>1. shoppingbaggen din</h2>
-            <article>
-                <img src="https://picsum.photos/200" alt="">
+            <article class="product-card kasse-side">
+                <img src="https://picsum.photos/430" alt="">
                 <h3>Produktnavn</h3>
                 <p>Pris: 199,-</p>
                 <p>Farge: <b>Beige</b></p>
             </article>
-            <article>
-                <img src="https://picsum.photos/200" alt="">
+            <article class="product-card kasse-side">
+                <img src="https://picsum.photos/430" alt="">
                 <h3>Produktnavn</h3>
                 <p>Pris: 199,-</p>
                 <p>Farge: <b>Beige</b></p>
             </article>
-            <article>
-                <img src="https://picsum.photos/200" alt="">
+            <article class="product-card kassse-side">
+                <img src="https://picsum.photos/430" alt="">
                 <h3>Produktnavn</h3>
                 <p>Pris: 199,-</p>
                 <p>Farge: <b>Beige</b></p>
             </article>
-            <article>
-                <img src="https://picsum.photos/200" alt="">
+            <article class="product-card kasse-side">
+                <img src="https://picsum.photos/430" alt="">
                 <h3>Produktnavn</h3>
                 <p>Pris: 199,-</p>
                 <p>Farge: <b>Beige</b></p>
             </article>
         </section>
-        <section>
+        <section class="leveringsadresse">
             <h2>
                 2. Dine opplyssninger
             </h2>
-            <form action="">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="button" value="lagre">
+            <form action="submit">
+                <label>Leveringsadresse</label>
+                <input type="text" placeholder="Fornavn*">
+                <input type="text" placeholder="Etternavn*">
+                <input type="text" placeholder="Gateadresse*">
+                <input type="number" placeholder="Postnummer*">
+                <input type="text" placeholder="Postnummer*">
             </form>
-            <a href="">Avbryt</a>
+            <footer>
+                <button type="button">Lagre</button>
+                <a href="">Avbryt</a>
+            </footer>
         </section>
-        <section>
+        <section class="leveringsvalg">
             <h2>3. Levering</h2>
-            <form action="">
+            <form action="submit">
                 <h3>Leveringsvalg</h3>
-                <input type="checkbox" name="" id="">
+                <input type="checkbox">
                 <p>posten</p>
-<input type="checkbox" name="" id="">
-<p>postnor</p>
-<input type="checkbox" name="" id="">
-<p>helthjem</p>
+                <input type="checkbox">
+                <p>postnor</p>
+                <input type="checkbox">
+                <p>helthjem</p>
             </form>
         </section>
         <section>
             <h2>4.betaling</h2>
-            <form action="">
+            <form action="submit">
                 <p>Betal med kort</p>
                 <p>kortnummer</p>
                 <input type="text">
@@ -100,15 +104,17 @@
                 <p>1999,-</p>
                 <input type="button" value="betal">
             </form>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste mollitia explicabo ullam, quod temporibus. Suscipit, doloribus. A, qui. Quos quisquam ipsum aperiam fugiat quae ab delectus aut recusandae sed!</p>
-            <input type="checkbox" name="" id="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste mollitia explicabo ullam, quod
+                temporibus. Suscipit, doloribus. A, qui. Quos quisquam ipsum aperiam fugiat quae ab delectus aut
+                recusandae sed!</p>
+            <input type="checkbox">
             <p>ja takk!</p>
-            <input type="checkbox" name="" id="">
+            <input type="checkbox">
             <p>ja takk!</p>
         </section>
 
     </main>
-    <footer>
+    <footer class="footer">
         <section>
             <h2>LOGO</h2>
             <article>
