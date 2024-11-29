@@ -17,7 +17,7 @@ footer {
 }
 
 section {
-  margin: 3rem 0;
+  margin: 3rem auto;
 }
 
 /*header*/
@@ -66,6 +66,7 @@ header form input {
 /*main*/
 /* index.html */
 .banner {
+  background-image: url("./bildet/sky-7328573_1280.jpg");
   background-color: #cccccc;
   padding: 35px;
   text-align: right;
@@ -76,6 +77,11 @@ header form input {
   background-color: #000;
   border: none;
   padding: 10px 15px;
+}
+
+.banner button:hover {
+  color: black;
+  background-color: white;
 }
 
 .filter-button-section ul {
@@ -91,33 +97,62 @@ header form input {
 .filter-button-section ul li button {
   background-color: white;
   border: 1px solid gray;
-  padding: 20px 25px;
+  padding: 15px;
   text-align: left;
+  cursor: pointer;
+}
+
+.filter-button-section ul li button:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.3s;
 }
 
 .product-card {
-  margin: 1.5rem 0;
-}
-
-.product-card img {
-  max-width: 430px;
-  width: 100%;
+  margin: 1.5rem auto;
 }
 
 .product-card h3,
 .product-card p {
   margin: 10px 0;
 }
+
+.product-card img{
+  width: 100%;
+}
+
 .product-card a {
   text-decoration: none;
   color: #000;
 }
 
+/* her brukte jeg chagpt */
+.kategori-seksjon{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .kategori-seksjon article {
-  border: 1px solid black;
-  padding: 7rem;
-  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1rem 0;
+}
+
+
+.kategori-kort img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+
+}
+
+.kategori-kort h3 {
+  position: absolute;
+  color: white;
+  font-size: 30px;
 }
 
 .feedback-seksjon article {
@@ -147,9 +182,9 @@ header form input {
   margin: auto 0;
 }
 
-.product-card .produkt-side-card {
-  display: flex;
-  justify-content: space-between;
+.product-card a {
+  max-width: 350px;
+  width: 100%;
 }
 
 /* checkout seksjon */
@@ -162,7 +197,7 @@ header form input {
 .skjemapåfyll form input {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
   padding: 15px 10px;
   font-size: 15px;
   margin: 5px 0;
@@ -198,6 +233,8 @@ header form input {
   margin: 0;
 }
 
+
+
 /*footer*/
 
 .footer {
@@ -214,7 +251,7 @@ header form input {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   header,
   main,
   footer {
@@ -235,7 +272,7 @@ header form input {
   }
 
   /* her brukte jeg w3 school sin kode */
-.footer-logo-seksjon {
+  .footer-logo-seksjon {
     grid-area: logo;
   }
   .footer-kontakt-seksjon {
@@ -256,8 +293,77 @@ header form input {
       "kontakt  snarvei   sms";
   }
 
-  .footer-kontakt-seksjon strong{
+  .footer-kontakt-seksjon strong {
     margin: 0 10px;
   }
+
+  .footer-sms-seksjon article ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .filter-button-section ul {
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 10px 0;
+  }
+
+  .banner {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .banner article {
+    width: 60%;
+  }
+  .banner article h2 {
+    font-size: 50px;
+  }
+
+  .product-card {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 1rem;
+  }
+
+.kort-en{
+  grid-area: "kort-en";
+}
+.kort-en{
+  grid-area: "kort-to";
+}
+
+.kort-en{
+  grid-area: "kort-tre";
+}
+
+.lang{
+  grid-area: "lang";
+}
+
+.korte{
+  grid-area: "korte";
+}
+
+.kategori-seksjon{
   
+}
+
+
+  .kategori-kort {
+    max-width: 386px;
+    width: 100%;
+    height: 300px;
+  }
+  .kategori-kort.lang {
+    max-width: 800px;
+    width: 100%;
+
+  }
+  .kategori-kort.korte {
+    max-width: 300px;
+    width: 100%;
+  }
 }
